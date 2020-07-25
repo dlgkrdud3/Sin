@@ -1,0 +1,102 @@
+
+#grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        border-bottom: 2px solid black;
+}
+
+body {
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0px;
+}
+
+h1 {
+        padding: 10px;
+        margin: 0px;
+        font-size: 50px;
+        font-family: cursive;
+}
+
+img {
+        display: block;
+        padding: 30px;
+}
+
+a {
+        text-decoration: none;
+        color: black;
+}
+
+
+.herder
+{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+        border-bottom: 2px solid black;
+        padding-left: 20px;        
+}
+.herder h3
+{
+        text-align: center;
+        padding-top: 13px;
+}
+.disc
+{
+        margin: 0px;
+        margin-left: 180px;
+        padding: 20px;
+        border-left: 2px solid black;
+}
+.herder_serch
+{
+    margin-left: 100px;
+    width: 204px;
+    background: transparent;
+    position: relative;
+}
+.serch_text
+{
+    border: none;
+    border-bottom: 1px solid darkorange;
+    background: transparent;
+    margin-top:26px;
+    padding: 0px;
+    height: 30px;
+    line-height: 50px;
+}
+.btn_serch_top
+{
+    float: right;
+    vertical-align: middle;
+    border: 0px;
+    margin: 0px;
+    top: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+@media(max-width:850px)
+{
+    #grid {
+        display: block;
+    }
+    .disc
+    {
+        margin: 0px;
+        margin-left: 0px;
+        padding: 20px;
+        border-left: 2px solid black;
+    }
+    .herder{
+                grid-template-columns: 180px 90px 90px 90px 90px 205px;      
+    }
+}
+a.namu:visited {color: red;}
+a.namu:active{color: blueviolet;}
+
+a.nglink:hover {color: gold;}
+a.nglink:active {color: blueviolet;}
